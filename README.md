@@ -1,0 +1,1 @@
+This is a sample project demonastrating basic CSS and html skills.
