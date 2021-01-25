@@ -1,0 +1,163 @@
+html{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images cube sign-in";
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store{
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#cube{
+    grid-area: cube;
+    justify-self: center;
+    align-self: center;
+}
+
+#sign-in{
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 200px 100px 100px ;
+    grid-template-areas:    " . logo  ."
+                            ".  search-bar  ."
+                            ". flexbox ."
+}
+#logo{
+    grid-area:logo ;
+    justify-self: center;
+    align-self: end;
+
+}
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: top;
+}
+#form-search{
+    grid-area:search-bar ;
+    display: flex;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 20px;
+    width: 90%;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+#search-bar{
+    align-self: center;
+    justify-self: center;
+    border: none;
+    width: 90%;
+    height:90%;
+}
+
+
+
+#google-search-button{
+    grid-area:google-search-button ;
+    margin-right: 10px;
+    border:none;
+    background-color: rgb(248, 249, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#feeling-lucky{
+    grid-area:feeling-lucky ;
+    border:none;
+    background-color:rgb(248, 249, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns:100px 100px 120px 1fr 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "advert business how-search carbon privacy terms settings";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color: rgb(242, 242, 242);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(218, 220, 224);
+}
+
+
+#advert{
+grid-area: advert;
+justify-self: center;
+align-self:center;
+}
+#business{
+grid-area: business;
+justify-self: center;
+align-self:center;
+}
+#how-search{
+grid-area: how-search;
+justify-self: center;
+align-self:center;
+}
+#carbon{
+grid-area: carbon;
+justify-self: center;
+align-self:center;
+}
+#privacy{
+grid-area: privacy;
+justify-self: center;
+align-self:center;
+}
+#terms{
+grid-area: terms;
+justify-self: center;
+align-self:center;
+}
+#settings{
+grid-area: settings;
+justify-self: center;
+align-self:center;
+}
